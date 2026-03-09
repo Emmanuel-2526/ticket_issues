@@ -1,0 +1,11 @@
+name: Mon Premier Pipeline CI
+on: push
+ 
+jobs:
+  verification-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Etape d'accueil
+        run: echo "Le nouveau code a bien été reçu par le serveur !"
+      - name: Etape de validation simulée
+        run: echo "Tous les tests sont au vert. Prêt pour la suite."
